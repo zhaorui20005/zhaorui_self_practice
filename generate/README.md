@@ -53,3 +53,7 @@ export PGSSLKEY=$(readlink -f client.key);
 psql "sslmode=verify-full  dbname=postgres" -U testssl -h centos7gpdb7
 ```
 See detailed settings at [sslmode](https://www.postgresql.org/docs/8.4/libpq-connect.html#LIBPQ-CONNECT-SSLMODE:~:text=server%20debug%20output.-,sslmode,-This%20option%20determines)
+
+Notice:
+In practice, the common name of the client should be equal to username, and the common name of the server shuold be equal to hostname of server.
+Otherwise, they cannot pass each side verify-full mode checking.

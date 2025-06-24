@@ -4,3 +4,4 @@ client.crt
 client.key
 server.key
 server.crt
+generate_cert

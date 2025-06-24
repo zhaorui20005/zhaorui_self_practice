@@ -28,13 +28,13 @@ func write_to_file(bytes []byte, pemType string, filename string) {
 	fmt.Printf("The %s string is:\n%s\n", pemType, string(pemData))
 }
 
-const ServerCommonName = "k8s_server"
+const ServerCommonName = "centos7gpdb7"
 const ClientCommonName = "testssl"
 
-var serverHosts = "centos7gpdb7, unknownhost"
+var serverHosts = "centos7gpdb7"
 var serverIPs = "127.0.0.1"
-var clientHosts = "centos7gpdb7"
-var clientIPs = "127.0.0.1"
+var clientHosts = "r7centosgpdb56"
+var clientIPs = "10.121.171.28"
 
 // ... (functions for generating keys, certificates, and writing to file)
 
