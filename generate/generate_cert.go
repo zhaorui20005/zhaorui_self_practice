@@ -29,11 +29,11 @@ func write_to_file(bytes []byte, pemType string, filename string) {
 }
 
 const ServerCommonName = "k8s_server"
-const ClientCommonName = "psql_client"
+const ClientCommonName = "testssl"
 
-var serverHosts = "localhost"
+var serverHosts = "centos7gpdb7, unknownhost"
 var serverIPs = "127.0.0.1"
-var clientHosts = "localhost"
+var clientHosts = "centos7gpdb7"
 var clientIPs = "127.0.0.1"
 
 // ... (functions for generating keys, certificates, and writing to file)
