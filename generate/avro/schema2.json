@@ -1,0 +1,167 @@
+{
+  "connect.name": "dbz.db.employee.Value",
+  "fields": [
+    {
+      "default": "",
+      "name": "empid",
+      "type": {
+        "connect.default": "",
+        "type": "string"
+      }
+    },
+    {
+      "default": "",
+      "name": "lastname",
+      "type": {
+        "connect.default": "",
+        "type": "string"
+      }
+    },
+    {
+      "default": "",
+      "name": "firstname",
+      "type": {
+        "connect.default": "",
+        "type": "string"
+      }
+    },
+    {
+      "default": 0,
+      "name": "commshonly",
+      "type": {
+        "connect.default": 0,
+        "connect.type": "int16",
+        "type": "int"
+      }
+    },
+    {
+      "default": 0,
+      "name": "salary",
+      "type": {
+        "logicalType": "decimal",
+        "precision": "10d",
+        "scale": 2,
+        "type": "long"
+      }
+    },
+    {
+      "default": "\u0000",
+      "name": "rate",
+      "type": {
+        "connect.default": "\u0000",
+        "connect.name": "org.apache.kafka.connect.data.Decimal",
+        "connect.parameters": {
+          "connect.decimal.precision": "10",
+          "scale": "2"
+        },
+        "connect.version": 1,
+        "logicalType": "decimal",
+        "precision": 10,
+        "scale": 2,
+        "type": "bytes"
+      }
+    },
+    {
+      "default": "\u0000",
+      "name": "hsalary",
+      "type": {
+        "connect.default": "\u0000",
+        "connect.name": "org.apache.kafka.connect.data.Decimal",
+        "connect.parameters": {
+          "connect.decimal.precision": "19",
+          "scale": "10"
+        },
+        "connect.version": 1,
+        "logicalType": "decimal",
+        "precision": 19,
+        "scale": 10,
+        "type": "bytes"
+      }
+    },
+    {
+      "default": null,
+      "name": "__op",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "__ts_ms",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+      "default": null,
+      "name": "__source_db",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "__source_name",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "__source_ts_ms",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+      "default": null,
+      "name": "__deleted",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "__dbport",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": [],
+      "name": "salaryArray",
+      "type": {
+        "type": "array",
+        "items": {
+          "logicalType": "decimal",
+          "precision": 10,
+          "scale": 2,
+          "type": "bytes"
+        }
+      }
+    },
+    {
+      "default": {},
+      "name": "salaryMap",
+      "type": {
+        "type": "map",
+        "values": {
+          "logicalType": "decimal",
+          "precision": 10,
+          "scale": 2,
+          "type": "bytes"
+        }
+      }
+    }
+  ],
+  "name": "Value",
+  "namespace": "dbz_dbonline_db00.dbonline.employee",
+  "type": "record"
+}
